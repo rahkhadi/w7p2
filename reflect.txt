@@ -1,0 +1,29 @@
+/**********************************************************************************************************************************
+				<assessment name: Workshop - #7 (Part-2)>
+Full Name  : Rahimullah Khadim Hussain
+Student ID#: 119515229
+Email      : rkhadim-hussain@myseneca.ca
+Section    : NEE
+Date of Completion: 11-11-23
+
+Authenticity Declaration:
+ I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+***********************************************************************************************************************************/
+
+In completing this workshop, I harnessed several crucial STL functions to optimize my code's functionality and efficiency. These included:
+
+for_each: This function was pivotal for displaying all Covid instances in the collection and accumulating cases and deaths. Its use streamlined the process of iterating through the collection.
+
+sort: I chose sort to order the collection based on specified criteria, such as country. Its simplicity and avoidance of manual loop implementation were key factors in my decision.
+
+any_of: Utilized in the inCollection function, any_of was instrumental in checking whether a country with a specified variant had more deaths than a given threshold. Its concise syntax made the condition check across the collection more readable.
+
+copy_if: This function was applied to selectively copy Covid statistics with more deaths than a specified threshold to a new list. Its usage, compared to manual loop iteration, enhanced code clarity and expressiveness.
+
+transform: The transform function was employed to dynamically change the severity of each Covid instance based on the number of deaths. This approach improved code readability and eliminated the need for explicit loops.
+
+Opting for STL algorithms over manual loop implementation brings notable advantages, including optimized performance, reduced error likelihood, and enhanced code readability and maintainability. Regarding the sorting function that accepts a field name as a parameter, I propose redesigning it to receive an unsigned integer instead of a string. For example, passing col.sort(0) would sort the collection based on the first member of Covid, i.e., the country. To prevent clients from specifying an invalid string, I would use an enumeration to represent each field and implement a check, throwing an exception if an invalid value is provided. This approach ensures compiler-detected errors during development, bolstering code robustness.
+
+
+
+
